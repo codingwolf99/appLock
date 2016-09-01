@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/btg_global_black"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/popwindow_tv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:text="@string/guide_open_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

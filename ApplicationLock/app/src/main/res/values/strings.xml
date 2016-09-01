@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MiniLock</string>
+    <string name="main_activity_btn_next">设置完成</string>
+    <string name="lock_view_remind_input_password">请输入密码</string>
+    <string name="lock_view_remind_input_again">密码错误，请重新输入</string>
+    <string name="lock_view_remind_set_password">亲爱的用户\n首次登陆请输入四位数字密码</string>
+    <string name="lock_view_remind_set_again">请再输入一次</string>
+    <string name="lock_view_remind_set_wrong">您输入的密码与第一次不一致\n请重新输入</string>
+    <string name="set_success">您已设置成功\n此密码将在您进入勾选应用时启用</string>
+    <string name="change_password">更改密码</string>
+    <string name="change_app">更改应用</string>
+    <string name="dialog_add_lock_ask">需要将$%s上锁吗</string>
+    <string name="dialog_add_lock_state">应用上锁可有效帮助您\n保护手机安全，防止隐私泄露</string>
+    <string name="main_activity_state">请勾选需要上锁的app</string>
+    <string name="normal_operation">正常运行中</string>
+    <string name="please_input_new_password">请输入新的四位数字密码</string>
+    <string name="input_password_before">使用前请输入密码</string>
+    <string name="launch_text">安卓应用锁</string>
+    <string name="open_overlay">开启悬浮窗权限</string>
+    <string name="allow_look">允许查看使用情况</string>
+    <string name="permission_setting">警告！一定要按要求开启权限！否则无法使用！</string>
+    <string name="guide_open_state">滑到最下面，点击【显示悬浮窗】并选择允许</string>
+    <string name="guide_look">点击[Minilock]并启用</string>
+</resources>

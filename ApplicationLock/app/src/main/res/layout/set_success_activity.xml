@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.example.huangkuncan.applicationlock.View.View.TopView
+        android:id="@+id/set_success_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.huangkuncan.applicationlock.View.View.TopView>
+
+    <LinearLayout
+        android:id="@+id/set_success_btn_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_success_topview"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/set_success_password"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shape_btn_short"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/change_password"
+            android:textSize="@dimen/top_view_tv_dimen"
+            />
+
+        <TextView
+            android:id="@+id/set_success_app"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_btn_short"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/change_app"
+            android:textSize="@dimen/top_view_tv_dimen"
+            />
+
+        <TextView
+            android:id="@+id/set_success_remind"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_btn_short"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="运行提示"
+            android:textSize="@dimen/top_view_tv_dimen"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set_success_state_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/set_success_topview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="开启手机浮窗权限方法"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="    手机授权 MiniLock 获得浮窗权限后,才能正常使用应用上锁功能，请前往手机[设置]中开启权限."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="操作步骤"
+            android:textColor="@color/gray"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    请开启手机中的[设置]ー[应用]ー找到[MiniLock]并进入一[在其他应用的上展示]ー允许即可。"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="注：由于各手机系统差异，请根据手机实际路径操作"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/main_activity_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".View.MainActivity">
+
+    <com.example.huangkuncan.applicationlock.View.View.TopView
+        android:id="@+id/main_activity_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.huangkuncan.applicationlock.View.View.TopView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_activity_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/main_activity_topview"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/main_activity_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_activity_viewpager"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_activity_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_back"
+        android:gravity="center"
+        android:text="@string/main_activity_btn_next"
+        android:textSize="20sp"/>
+</RelativeLayout>

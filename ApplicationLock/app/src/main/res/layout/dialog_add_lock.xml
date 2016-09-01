@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_add_lock_appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/shape_linearlayout_back_collor"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textSize="@dimen/dialog_text_dimen"
+       android:text="需要上锁吗"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/gray"
+        android:gravity="center_vertical"
+        android:text="@string/dialog_add_lock_state"
+        android:textSize="@dimen/dialog_text_dimen"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/dialog_add_lock_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="上锁"
+            android:textColor="@color/shape_linearlayout_back_collor"
+            android:textSize="@dimen/dialog_text_dimen"
+
+            />
+
+        <TextView
+            android:id="@+id/dialog_add_lock_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dialog_text_dimen"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

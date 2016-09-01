@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.bugtags.library.plugin'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.0 rc2"
+//自动上传插件
+    bugtags {
+        appKey "c03a65a02efa7ab5fc80be3340327bae"  //这里是你的 appKey
+        appSecret "APP_SECRET"    //这里是你的 appSecret，管理员在设置页可以查看
+
+        trackingNetworkEnabled true //开启网络请求跟踪功能(企业版)
+    }
+    defaultConfig {
+        applicationId "com.example.huangkuncan.applicationlock"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.bugtags.library:bugtags-lib:latest.integration'
+}
